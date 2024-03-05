@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import {Sequelize} from "sequelize";
 import { DB_NAME, DB_USER, DB_PASSWORD } from '../config.js';
 

@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 import connection_db from '../database/connection_db.js';
 
-const Poster = connection_db.define('Poster', {
+export const Poster = connection_db.define('Poster', {
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,

@@ -3,12 +3,11 @@ import {PORT} from "./config.js"
 import connection_db from "./database/connection_db.js";
 import Poster from "./models/PosterModel.js"
 import express from  "express";
+import PosterRouter from "./routes/PosterRouter.js";
 
 const app = express();
 
-app.get(`/`,(req,res)=>{
-  res.send("Hello Girls")
-})
+app.use('/api' , PosterRouter);
 
 try {
     await connection_db.authenticate();

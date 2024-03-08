@@ -32,5 +32,33 @@ export const deletePoster = async (request, response) => {
 
 //POST
 
+export const createPoster = async(request,response)=>{
+    try {
+        await  Poster.create({
+            name : request.body.name,
+            director : request.body.director,
+            year: request.body.year,
+            imageUrl: request.body.imageUrl,
+        })
+        
+        response.status(201).json({
+            message:"El poster se creo con éxito",
+        });
+    } catch (error) {
+
+        response.json({message: error.message})
+    }
+    
+}
+
 //UPDATE
 
+export  const updatePoster=async (request,response)=> {
+    try {
+        await Poster.update({
+            where: { id : request.params.id}
+        })
+    } catch (error) {
+        
+    }
+}

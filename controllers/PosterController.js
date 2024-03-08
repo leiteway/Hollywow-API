@@ -55,10 +55,16 @@ export const createPoster = async(request,response)=>{
 
 export  const updatePoster=async (request,response)=> {
     try {
-        await Poster.update({
-            where: { id : request.params.id}
-        })
+        await Poster.update({ 
+            name:  request.body.name ,
+             director: request.body.director, 
+             year: request.body.year,
+            imageUrl: request.body.imageUrl,
+        }
+           ,{where:{ id : request.params.id}}  
+        );
+        response.status(200).json();
     } catch (error) {
-        
+        response.json({message: error.message})
     }
 }

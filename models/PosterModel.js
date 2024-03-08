@@ -32,6 +32,4 @@ export const Poster = connection_db.define('Poster', {
       }
 );
 
-
- 
   export default Poster;

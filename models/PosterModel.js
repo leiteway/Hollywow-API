@@ -17,6 +17,11 @@ export const Poster = connection_db.define('Poster', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  year: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  }
+  ,
   imageUrl: {
     type: DataTypes.STRING,
     allowNull: false,

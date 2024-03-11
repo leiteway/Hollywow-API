@@ -35,7 +35,11 @@ export const deletePoster = async (request, response) => {
         await Poster.destroy({
             where: { id : request.params.id}
         })
+        const deletedPoster = await Poster.findOne({
+            where: { id: request.params.id}
+        });  
         response.status(200).json({
+            poster: deletedPoster,
             message:'Se elimino correctamente'
         });
     } catch (error) {

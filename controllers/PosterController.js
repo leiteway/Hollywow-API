@@ -47,16 +47,14 @@ export const deletePoster = async (request, response) => {
 
 export const createPoster = async(request,response)=>{
     try {
-        await  Poster.create({
-            name : request.body.name,
-            director : request.body.director,
-            year: request.body.year,
-            imageUrl: request.body.imageUrl,
-        })
+        const newPoster = await  Poster.create(request.body)
         
-        response.status(201).json({
+        response.status(201).json(newPoster),
+        response.json({
             message:"El poster se creo con éxito",
         });
+        
+        
     } catch (error) {
 
         response.json({message: error.message})
@@ -68,15 +66,14 @@ export const createPoster = async(request,response)=>{
 
 export  const updatePoster=async (request,response)=> {
     try {
-        await Poster.update({ 
-            name:  request.body.name ,
-            director: request.body.director, 
-            year: request.body.year,
-            imageUrl: request.body.imageUrl,
-        }
-           ,{where:{ id : request.params.id}}  
+        const updatePoster = await Poster.update(request.body
+            
+        ,{where:{ id : request.params.id}}  
         );
-        response.status(200).json({
+        response.status(200).json(
+            
+            updatePoster,
+            {
             message:"Se actualizó el poster correctamente",
         });
     } catch (error) {

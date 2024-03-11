@@ -32,10 +32,11 @@ export const getPosterById = async  (request,response)=>{
 //DELETE
 export const deletePoster = async (request, response) => {
     try {
-        await Poster.destroy({
+        const newPoster = await Poster.destroy({
             where: { id : request.params.id}
         })
         response.status(200).json({
+            poster : newPoster,
             message:'Se elimino correctamente'
         });
     } catch (error) {
@@ -47,10 +48,10 @@ export const deletePoster = async (request, response) => {
 
 export const createPoster = async(request,response)=>{
     try {
-        const newPoster = await  Poster.create(request.body)
+        const updatePoster = await  Poster.create(request.body)
         
-        response.status(201).json(newPoster),
-        response.json({
+        response.status(201).json({
+            poster: updatePoster,
             message:"El poster se creo con éxito",
         });
         
@@ -66,15 +67,17 @@ export const createPoster = async(request,response)=>{
 
 export  const updatePoster=async (request,response)=> {
     try {
-        const updatePoster = await Poster.update(request.body
+        await Poster.update(request.body
             
-        ,{where:{ id : request.params.id}}  
+        ,{where:{ id: request.params.id}}  
         );
-        response.status(200).json(
-            
-            updatePoster,
-            {
-            message:"Se actualizó el poster correctamente",
+        const putPoster = await Poster.findOne({
+            where: { id: request.params.id}
+        });  
+
+        response.status(200).json({
+            poster: putPoster,
+            message:"Se actualizó el poster correctamente"
         });
     } catch (error) {
         response.json({message: error.message})

@@ -38,19 +38,13 @@ export const deletePoster = async (request, response) => {
         const deletedPoster = await Poster.findOne({
             where: { id: request.params.id}
         });  
-        if (!deletedPoster) {
+        if (deletedPoster === null) {
             response.status(200).json({
                 poster: true,
                 message: 'Se elimino correctamente'
             });
             return;
         }
-
-
-       /*  response.status(200).json({
-            poster: deletedPoster,
-            message:'Se elimino correctamente'
-        }); */
     } catch (error) {
         response.json({message: error.message})
     }

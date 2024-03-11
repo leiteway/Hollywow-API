@@ -32,11 +32,10 @@ export const getPosterById = async  (request,response)=>{
 //DELETE
 export const deletePoster = async (request, response) => {
     try {
-        const newPoster = await Poster.destroy({
+        await Poster.destroy({
             where: { id : request.params.id}
         })
         response.status(200).json({
-            poster : newPoster,
             message:'Se elimino correctamente'
         });
     } catch (error) {

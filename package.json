@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "nodemon --watch app.js"
   },
   "keywords": [],
@@ -20,6 +20,7 @@
     "sequelize": "^6.37.1"
   },
   "devDependencies": {
+    "jest-transform-stub": "^2.0.0",
     "nodemon": "^3.1.0",
     "supertest": "^6.3.4"
   }

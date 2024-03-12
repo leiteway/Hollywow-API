@@ -1,5 +1,5 @@
 import Poster from "../models/PosterModel.js"
-
+import { validationResult} from 'express-validator';
 //GET
 export const getAllPosters = async (request, response) => {
    
@@ -38,10 +38,13 @@ export const deletePoster = async (request, response) => {
         const deletedPoster = await Poster.findOne({
             where: { id: request.params.id}
         });  
-        response.status(200).json({
-            poster: deletedPoster,
-            message:'Se elimino correctamente'
-        });
+        if (deletedPoster === null) {
+            response.status(200).json({
+                poster: true,
+                message: 'Se elimino correctamente'
+            });
+            return;
+        }
     } catch (error) {
         response.json({message: error.message})
     }
@@ -50,11 +53,16 @@ export const deletePoster = async (request, response) => {
 //POST
 
 export const createPoster = async(request,response)=>{
+    const errors = validationResult(request);
+        if (!errors.isEmpty()) {
+            return response.status(400).json({ errors: errors.array() });
+        }
+ 
     try {
-        const updatePoster = await  Poster.create(request.body)
+        const createdPoster = await  Poster.create(request.body)
         
         response.status(201).json({
-            poster: updatePoster,
+            poster: createdPoster,
             message:"El poster se creo con éxito",
         });
         
@@ -63,8 +71,8 @@ export const createPoster = async(request,response)=>{
 
         response.json({message: error.message})
     }
-    
-}
+} 
+
 
 //UPDATE
 

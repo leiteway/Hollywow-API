@@ -1,9 +1,27 @@
 import require  from 'express';
 import request from 'supertest';
-import app from '../app.js'; 
+import { app } from '../app.js'; 
 
-const api = request(app);
-describe('POST /posts', () => {
+const api = request(app); //request nos permite hacer solicitudes a la app
+describe('Testing CRUD Posters', () => {
+
+  test("Response body must be an array and then show 200 status", async()=>{
+    const response = await api.get('/api');
+    expect(Array.isArray(response.body)).toBe(true); //que objeto quiero recibir, modificar
+    expect(response.status).toBe(200);
+    });
+
+  test ("Should create a poster with every field filled from the model", async () => {
+    const response = await api.post ('/api').send(
+        {
+          "name": "test",
+          "director": "test",
+          "year": 2023,
+          "imageUrl": "http://example.com/image.jpg",
+        });
+        expect (typeof response.body).toBe("object");//tipo de dato que esperamos obtener
+        expect (response.status).toBe(201);
+  })
   
 
 
@@ -19,7 +37,7 @@ describe('POST /posts', () => {
          expect(res.body).toHaveProperty('id'); 
          expect(res.body.title).toEqual("Título del Post");    
     })  */ 
-});
+
 
 
 
@@ -46,4 +64,4 @@ describe('POST /posts', () => {
  });
 
  // Agrega más pruebas para otros casos, como errores de validación, etc.
-}); */
+}); */})

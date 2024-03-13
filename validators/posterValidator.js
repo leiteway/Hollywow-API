@@ -26,6 +26,7 @@ export const validateDeletePoster=[
 ]
 
 export const  validatePutPosters= [
+    check("name").exists().notEmpty(),
     check("id").exists().notEmpty().custom(
         async (id)=>{
             const poster = await PosterModel.findByPk(id);

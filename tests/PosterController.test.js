@@ -14,4 +14,9 @@ describe('testing', () => {
       const response = await api.get('/api');
       expect(response.status).toBe(200);
     });
+
+    test('should deleted poster', async() =>{
+      const response = await  api.delete("/api/:id");
+      expect('id');
+    })
   });

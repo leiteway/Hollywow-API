@@ -3,10 +3,22 @@ import {validateResult} from "../helpers/validatorHelper.js"
 import PosterModel from "../models/PosterModel.js"
 
 export const validateCreatePoster = [
-    body('name').notEmpty().withMessage('El nombre es requerido'),
-    body('director').notEmpty().withMessage('Director no debe estar vacío'),
-    body('year').isInt().withMessage('Year debe tener números enteros'),
-    body('imageUrl').notEmpty().withMessage('La imagen es obligatoria'),
+    body('name')
+    .notEmpty()
+    .withMessage('El nombre es requerido'),
+
+    body('director')
+    .notEmpty()
+    .withMessage('Director no debe estar vacío'),
+
+    body('year')
+    .isInt()
+    .withMessage('Year debe tener números enteros'),
+
+    body('imageUrl')
+    .notEmpty()
+    .withMessage('La imagen es obligatoria'),
+    
     (req, res, next)=>{
         validateResult(req, res, next)
     }  

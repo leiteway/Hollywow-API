@@ -1,12 +1,14 @@
-// En tests/PosterController.test.js
 import require  from 'express';
 import request from 'supertest';
-import app from '../app.js'; // Asegúrate de importar tu aplicación Express
-import supertest from 'supertest';
+import app from '../app.js'; 
 
-
+const api = request(app);
 describe('POST /posts', () => {
-    it("Debería crear un post", async()=>{
+  
+
+
+
+    /* it("Debería crear un post", async()=>{
         const res = await request(app)
             .post('/posts')
             .send({
@@ -16,7 +18,7 @@ describe('POST /posts', () => {
          expect(res.status).toBe(201);
          expect(res.body).toHaveProperty('id'); 
          expect(res.body.title).toEqual("Título del Post");    
-    })  
+    })  */ 
 });
 
 

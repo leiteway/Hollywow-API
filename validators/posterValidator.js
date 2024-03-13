@@ -26,8 +26,32 @@ export const validateDeletePoster=[
 ]
 
 export const  validatePutPosters= [
-    check("name").exists().notEmpty(),
-    check("id").exists().notEmpty().custom(
+    check("name")
+    .exists()
+    .notEmpty()
+    .withMessage('Name is required'),
+
+    check("year")
+    .exists()
+    .notEmpty()
+    .withMessage('Year is required'),
+
+    check("director")
+    .exists()
+    .notEmpty()
+    .withMessage('Director is required'),
+
+    check("imageUrl")
+    .exists()
+    .notEmpty()
+    .withMessage('ImageUrl is required'),
+
+
+
+    check("id")
+    .exists()
+    .notEmpty()
+    .custom(
         async (id)=>{
             const poster = await PosterModel.findByPk(id);
             if(!poster){

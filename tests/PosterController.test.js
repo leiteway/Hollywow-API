@@ -11,11 +11,16 @@ describe('Testing CRUD posters', () => {
         expect(response.status).toBe(200);
     });
     
-    // test('It should respond with a 201 status code', async () => {
-    //     const response = await api.post('/api');
-    //     expect(Array.isArray(response.body)).toBe(true);
-    //     expect(response.status).toBe(201);
-    // });
+    test('Post response should respond with a 201 status', async () => {
+        const response = await api.post('/api').send({
+            "name": "Test Poster",
+            "director": "Test Director",
+            "year": 2023,
+            "imageUrl": "http://example.com/image.jpg"
+        });
+        expect(typeof response.body).toBe('object');
+        expect(response.status).toBe(201);
+    });
 
     
     

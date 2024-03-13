@@ -1,5 +1,5 @@
 import Poster from "../models/PosterModel.js"
-import { validationResult} from 'express-validator';
+
 //GET
 export const getAllPosters = async (request, response) => {
    
@@ -8,7 +8,7 @@ export const getAllPosters = async (request, response) => {
     response.status(200).json(posters);
 }
 catch(error){
-    response.json({message: error.message})
+    response.status(500).json({message: error.message})
 }
 
 }
@@ -24,7 +24,7 @@ export const getPosterById = async  (request,response)=>{
         
     } 
     catch (error) {
-        response.json({message: error.message})
+        response.status(500).json({message: error.message})
     }
 
 }
@@ -46,18 +46,14 @@ export const deletePoster = async (request, response) => {
             return;
         }
     } catch (error) {
-        response.json({message: error.message})
+        response.status(500).json({message: error.message})
     }
 }
 
 //POST
 
 export const createPoster = async(request,response)=>{
-    const errors = validationResult(request);
-        if (!errors.isEmpty()) {
-            return response.status(400).json({ errors: errors.array() });
-        }
- 
+     
     try {
         const createdPoster = await  Poster.create(request.body)
         
@@ -69,7 +65,7 @@ export const createPoster = async(request,response)=>{
         
     } catch (error) {
 
-        response.json({message: error.message})
+        response.status(500).json({message: error.message})
     }
 } 
 
@@ -91,6 +87,6 @@ export  const updatePoster=async (request,response)=> {
             message:"Se actualizó el poster correctamente"
         });
     } catch (error) {
-        response.json({message: error.message})
+        response.status(500).json({message: error.message})
     }
 }

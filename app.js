@@ -5,7 +5,7 @@ import Poster from "./models/PosterModel.js"
 import express from  "express";
 import PosterRouter from "./routes/PosterRouter.js";
 
-const app = express();
+export const app = express();
 
 app.use(express.json());
 app.use('/api' , PosterRouter);
@@ -19,8 +19,6 @@ try {
     console.error('❌ Unable to connect to the database:', error);
   }
 
-  app.listen(PORT, ()=>{
+  export const server = app.listen(PORT, ()=>{
     console.log(`Server is running on port http://localhost:${PORT}`)
   })
-
-  export default app;

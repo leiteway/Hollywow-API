@@ -24,3 +24,15 @@ export const validateDeletePoster=[
         }),
      validateResult
 ]
+
+export const  validatePutPosters= [
+    check("id").exists().notEmpty().custom(
+        async (id)=>{
+            const poster = await PosterModel.findByPk(id);
+            if(!poster){
+                throw new Error('The poster was not found')
+            }
+        }
+    ),
+    validateResult
+]

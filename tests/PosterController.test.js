@@ -1,25 +1,38 @@
-import require  from 'express';
+// import require  from 'express';
 import request from 'supertest';
 import app from '../app.js'; 
 
 const api = request(app);
-describe('POST /posts', () => {
-  
+describe('Testing CRUD posters', () => {
+    
+    test('Response body must be an array and then show 200 status', async () => {
+        const response = await api.get('/api');
+        expect(Array.isArray(response.body)).toBe(true);
+        expect(response.status).toBe(200);
+    });
+    
+    // test('It should respond with a 201 status code', async () => {
+    //     const response = await api.post('/api');
+    //     expect(Array.isArray(response.body)).toBe(true);
+    //     expect(response.status).toBe(201);
+    // });
 
+    
+    
+    });
 
+    // it("Debería crear un post", async()=>{
+    //     const res = await request(app)
+    //     .post('/posts')
+    //     .send({
+    //         title: "Título del Post",   
+    //         content: "Contenido del Post"                                    
+    //     });
+    //     expect(res.status).toBe(201);
+    //     expect(res.body).toHaveProperty('id'); 
+    //     expect(res.body.title).toEqual("Título del Post");    
+    // });
 
-    /* it("Debería crear un post", async()=>{
-        const res = await request(app)
-            .post('/posts')
-            .send({
-                title: "Título del Post",   
-                content: "Contenido del Post"                                    
-            });
-         expect(res.status).toBe(201);
-         expect(res.body).toHaveProperty('id'); 
-         expect(res.body.title).toEqual("Título del Post");    
-    })  */ 
-});
 
 
 

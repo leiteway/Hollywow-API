@@ -8,7 +8,7 @@ export const getAllPosters = async (request, response) => {
     response.status(200).json(posters);
 }
 catch(error){
-    response.json({message: error.message})
+    response.status(500).json({message: error.message})
 }
 
 }
@@ -24,7 +24,7 @@ export const getPosterById = async  (request,response)=>{
         
     } 
     catch (error) {
-        response.json({message: error.message})
+        response.status(500).json({message: error.message})
     }
 
 }
@@ -46,7 +46,7 @@ export const deletePoster = async (request, response) => {
             return;
         }
     } catch (error) {
-        response.json({message: error.message})
+        response.status(500).json({message: error.message})
     }
 }
 
@@ -65,7 +65,7 @@ export const createPoster = async(request,response)=>{
         
     } catch (error) {
 
-        response.json({message: error.message})
+        response.status(500).json({message: error.message})
     }
 } 
 
@@ -87,6 +87,6 @@ export  const updatePoster=async (request,response)=> {
             message:"Se actualizó el poster correctamente"
         });
     } catch (error) {
-        response.json({message: error.message})
+        response.status(500).json({message: error.message})
     }
 }

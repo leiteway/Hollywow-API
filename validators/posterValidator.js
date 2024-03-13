@@ -36,9 +36,18 @@ export const validateDeletePoster=[
 
 export const  validatePutPosters= [
     check('name')
-        //.exists() para decir que tiene que existir este campo
+         //.exists() para decir que tiene que existir este campo
         .notEmpty() //para que haya caracteres dentro
         .withMessage('El nombre es requerido'),  //esto es para que te aparezca este mensaje
+    check('director')
+        .notEmpty()
+        .withMessage('Director no debe estar vacío'),
+    check('year')
+        .isInt() //para que haya números dentro
+        .withMessage('Year debe tener números enteros'),
+    check('imageUrl')
+        .notEmpty()
+        .withMessage('La imagen es obligatoria'),
     check("id").exists().notEmpty().custom(
         async (id)=>{
             const poster = await PosterModel.findByPk(id);

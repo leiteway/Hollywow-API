@@ -15,8 +15,7 @@ This project consists in the Back-end of an API called Hollywow, which consists 
 - [Technologies](#technologies)
 - [Authors](#authors)
 
-# Description 
-🧾 
+# Description # 🧾 
 We have developed the application to manage films data, to allow the users to record the information of the poster´s movies.
 
 ## Project Configuration

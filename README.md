@@ -26,9 +26,11 @@ To enter the repository folder.
 * Copy code: `npm install`
 * Copy code to make the server run: `npm run dev`
 
-This will start the JSON server at http://localhost:3000 using the db.json file in the server folder.
-* Copy code: `npm run dev`
-This will start the server.
+This will start the sever http://localhost:3008 using the database on MySQL Workbench.
+[Doc. Postman.pdf](https://github.com/leiteway/Hollywow-API/files/14641270/Doc.Postman.pdf)
+
+
+4. Inicialize the Postman 
 * Copy code: `npm run test`
 This will run the tests.
 

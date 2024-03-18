@@ -91,9 +91,10 @@ This will run the tests.
 Contributions are welcome! If you find any problems or have suggestions for improvement, please create an issue or make a pull request.
 
 # Technologies 
-![Our Skills](https://skillicons.dev/icons?i=js,git,github,vite,discord,react,)
 <img width="100" src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" >
-*MySQLWorkbench
+<img width="100" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" >
+<img width="100" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png">
+
 *Express Validator
 *Jest
 *Supertest

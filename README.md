@@ -4,22 +4,28 @@
 This project consists in the Back-end of an API called Hollywow, which consists of performing the __CRUD__ method using POST (Create), GET (Read), PUT (Update) and DELETE (Delete) requests, with several technologies.
 
 # 🧾 Description 
-We have developed the application to manage films data, to allow the users to record the information to do this little trees.
+We have developed the application to manage films data, to allow the users to record the information of the poster´s movies.
 
 ## Project Configuration
 
 1. **Clone the Repository:**
 
 `bash`
-* Copy code: `git clone https://github.com/leiteway/Hollywow-API/tree/main`
-* Copy code: `cd hollywow-API`
+* Copy code in your terminal: `git clone https://github.com/leiteway/Hollywow-API.git`
+* Copy code in your terminal: `cd Hollywow-API`
 To enter the repository folder.
 
-2. **Install Dependencies:** 
+2. **Create the file ´.env´**
+   
+* Create the file ´.env´ located in the folder "Hollywow-API"
+* Copy the information placed on ´.env_example´ and fill it with your personal data
+
+3. **Install Dependencies:** 
 
 `bash`
 * Copy code: `npm install`
-* Copy code: `npm run api`
+* Copy code to make the server run: `npm run dev`
+
 This will start the JSON server at http://localhost:3000 using the db.json file in the server folder.
 * Copy code: `npm run dev`
 This will start the server.
@@ -55,7 +61,7 @@ Contributions are welcome! If you find any problems or have suggestions for impr
 
 # 🧙🏻‍♀️ Autors 
 
- - J.Leite  https://github.com/BeatrizMercado
- - Fatima Capilla  https://github.com/RaquelLores
+ - J.Leite  https://github.com/leiteway
+ - Fatima Capilla  https://github.com/FatimaCapilla
  - Desirée Carrizosa  https://github.com/DesireeCSilva
  - Nhoeli Salazar https://github.com/Nho89

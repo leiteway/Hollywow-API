@@ -28,9 +28,9 @@ We have developed the application to manage films data, to allow the users to re
 To enter the repository folder.
 
 
-2. **Create the file ´.env´**
+2. **Create the file __.env__**
    
-* Create the file ´.env´ located in the folder "Hollywow-API"
+* Create the file __.env__ located in the folder "Hollywow-API"
 * Copy the information placed on ´.env_example´ and fill it with your personal data
 
 
@@ -39,7 +39,7 @@ To enter the repository folder.
 `bash`
 * Copy code: `npm install`
 * Copy code to make the server run: `npm run dev`
-This will start the server http://localhost:3008 using the database on MySQL Workbench.
+This will start the server __http://localhost:3008__ using the database on MySQL Workbench.
 
 ## Inicialize the Postman
 
@@ -81,15 +81,15 @@ This will run the tests.
 * __helpers:__ contains the import and export validations from express-validator.
 * __models__: the model of database.
 * __node_modules:__ contains all the dependencies of your project. When you install packages using npm, they are stored here.
-* __routes:__ route definitions for the methods of the API
+* __routes:__ route definitions for the methods of the API.
 * __test:__ unit and integration tests in one file.
 * __validators:__ contains the validations of the methods of the CRUD.
 * __.env:__ is a configuration file commonly used to store environment variables.
-* __.gitignore:__  Specifies files and folders ignored by Git to prevent irrelevant or automatically generated files from being tracked.
+* __.gitignore:__  specifies files and folders ignored by Git to prevent irrelevant or automatically generated files from being tracked.
 * __app.js:__ entry point of the application.
 * __config.js:__ application configuration, such as database and server configuration.
-* __package.json and package-lock.json:__ These files contain metadata about your project and its dependencies. They also include scripts for running various tasks like starting the development server or building the production bundle.
-* __README.md:__ This file typically contains instructions on how to set up and run your project, as well as any other relevant information for contributors or users.
+* __package.json and package-lock.json:__ these files contain metadata about your project and its dependencies. They also include scripts for running various tasks like starting the development server or building the production bundle.
+* __README.md:__ this file typically contains instructions on how to set up and run your project, as well as any other relevant information for contributors or users.
 
 
 # Technologies 🛠

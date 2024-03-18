@@ -1,6 +1,6 @@
 
 
-# 🎞🎟 # Hollywood-API 
+# 🎞🎟 # Hollywow-API 
 This project consists in the Back-end of an API called Hollywow, which consists of performing the __CRUD__ method using POST (Create), GET (Read), PUT (Update) and DELETE (Delete) requests, with several technologies.
 
 # 🧾 Description 
@@ -11,8 +11,8 @@ We have developed the application to manage films data, to allow the users to re
 1. **Clone the Repository:**
 
 `bash`
-* Copy code: `git clone https://github.com/Nho89/bons-app-gallery`
-* Copy code: `cd bons-app-gallery`
+* Copy code: `git clone https://github.com/leiteway/Hollywow-API/tree/main`
+* Copy code: `cd hollywow-API`
 To enter the repository folder.
 
 2. **Install Dependencies:** 
@@ -51,11 +51,11 @@ This will run the tests.
 Contributions are welcome! If you find any problems or have suggestions for improvement, please create an issue or make a pull request.
 
 # Technologies 
-![Our Skills](https://skillicons.dev/icons?i=html,css,js,git,figma,github,vite,discord,react)
+![Our Skills](https://skillicons.dev/icons?i=js,git,github,vite,discord,react,)
 
 # 🧙🏻‍♀️ Autors 
 
- - Beatriz Mercado  https://github.com/BeatrizMercado
- - Raquel Lores  https://github.com/RaquelLores
+ - J.Leite  https://github.com/BeatrizMercado
+ - Fatima Capilla  https://github.com/RaquelLores
  - Desirée Carrizosa  https://github.com/DesireeCSilva
  - Nhoeli Salazar https://github.com/Nho89

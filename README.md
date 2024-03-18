@@ -3,6 +3,15 @@
 # 🎞🎟 # Hollywow-API 
 This project consists in the Back-end of an API called Hollywow, which consists of performing the __CRUD__ method using POST (Create), GET (Read), PUT (Update) and DELETE (Delete) requests, with several technologies.
 
+
+# Index
+
+- [Description](#description)
+- [Project Configuration](#project-configuration)
+- [Inicialize the Postman](#inicialize-the-postman)
+- [Recursos Externos](#recursos-externos)
+- [Ejemplos de visionado de la web](#ejemplo-de-visionado-de-la-web)
+
 # 🧾 Description 
 We have developed the application to manage films data, to allow the users to record the information of the poster´s movies.
 

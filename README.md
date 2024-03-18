@@ -82,7 +82,7 @@ This will run the tests.
 Contributions are welcome! If you find any problems or have suggestions for improvement, please create an issue or make a pull request.
 
 # Technologies 
-![Our Skills](https://skillicons.dev/icons?i=js,git,github,vite,discord,react,mySQLWorkbench)
+![Our Skills](https://skillicons.dev/icons?i=js,git,github,vite,discord,react,mySQL)
 
 # 🧙🏻‍♀️ Authors 
 

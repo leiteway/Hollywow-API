@@ -5,7 +5,16 @@ import Poster from  '../models/PosterModel.js';
 
 const api = request(app);
 describe('testing', () => {
-
+afterAll(async ()=>{
+        try {
+            await Poster.destroy({where: { name:"test"}});
+            await Poster.destroy({where: {name: "update test"}});
+        } catch (error) {
+            console.error('Error destroying poster:', error);
+        }
+        await connection_db.close();
+        server.close();
+    });
       test('should create a new poster', async()=>{
       const  response = await api.post('/api').send(
         {
@@ -18,15 +27,7 @@ describe('testing', () => {
       expect(typeof response.body).toBe('object');
     });
 
-      afterAll(async ()=>{
-        try {
-            await Poster.destroy({where: { name:"test"}});
-        } catch (error) {
-            console.error('Error destroying poster:', error);
-        }
-        await connection_db.close();
-        server.close();
-    });
+      
 
    test('should get posters', async() => {
       const response = await api.get('/api');
@@ -59,16 +60,4 @@ describe('testing', () => {
         expect(response.status).toBe(200);
         expect(typeof response.body).toBe('object');
     }) 
-
-
-    afterAll(async ()=>{
-        try {
-            await Poster.destroy({where: { name:"update test"}});
-        } catch (error) {
-            console.error('Error destroying poster:', error);
-        }
-        await connection_db.close();
-        server.close();
-    });
-    
   });

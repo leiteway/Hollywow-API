@@ -6,16 +6,16 @@ This project consists in the Back-end of an API called Hollywow, which consists 
 
 # Index
 
-- [Description](#🧾-description)
+- [Description](#description)
 - [Project Configuration](#project-configuration)
 - [Inicialize the Postman](#inicialize-the-postman)
 - [Test](#test)
 - [Project Structure ](#project-structure)
 - [Contributions](#contributions)
 - [Technologies](#technologies)
-- [Authors](#🧙🏻‍♀️-authors)
+- [Authors](#authors)
 
-# 🧾 Description 
+# Description 🧾 
 We have developed the application to manage films data, to allow the users to record the information of the poster´s movies.
 
 ## Project Configuration
@@ -100,7 +100,7 @@ Contributions are welcome! If you find any problems or have suggestions for impr
 *Sequelize
 *Postman
 
-# 🧙🏻‍♀️ Authors 
+# Authors  🧙🏻‍♀️ 
 
  - J.Leite  https://github.com/leiteway
  - Fatima Capilla  https://github.com/FatimaCapilla

@@ -27,10 +27,12 @@ We have developed the application to manage films data, to allow the users to re
 * Copy code in your terminal: `cd Hollywow-API`
 To enter the repository folder.
 
+
 2. **Create the file ´.env´**
    
 * Create the file ´.env´ located in the folder "Hollywow-API"
 * Copy the information placed on ´.env_example´ and fill it with your personal data
+
 
 3. **Install Dependencies:** 
 
@@ -70,7 +72,6 @@ Route to do the method GET BY ID from the CRUD of our project, including our URL
 This will run the tests.
 
 
-
 ## Project Structure 
 * __controllers:__ to handle HTTP requests.
 * __database:__ configuration of connections with the database.
@@ -87,16 +88,9 @@ This will run the tests.
 * __package.json and package-lock.json:__ These files contain metadata about your project and its dependencies. They also include scripts for running various tasks like starting the development server or building the production bundle.
 * __README.md:__ This file typically contains instructions on how to set up and run your project, as well as any other relevant information for contributors or users.
 
-## Contributions
-Contributions are welcome! If you find any problems or have suggestions for improvement, please create an issue or make a pull request.
 
 # Technologies 
-<img width="100" src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" ><img width="100" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" ><img width="100" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/187955005-f4ca6f1a-e727-497b-b81b-93fb9726268e.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png"><img width="100" src="https://camo.githubusercontent.com/22ab83df12f18aafa068cba1d938a1a6cb5019b0c412645d14405cb807b9d89e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f3333383935382f696d616765732f313439363334352f7375706572746573742e706e67"><img width="100" src="https://cdn.worldvectorlogo.com/logos/nodemon.svg">
-
-
-*Supertest
-*Nodemon
-*Sequelize
+<img width="100" src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" ><img width="100" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" ><img width="100" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/187955005-f4ca6f1a-e727-497b-b81b-93fb9726268e.png"><img width="100" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png"><img width="100" src="https://camo.githubusercontent.com/22ab83df12f18aafa068cba1d938a1a6cb5019b0c412645d14405cb807b9d89e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f3333383935382f696d616765732f313439363334352f7375706572746573742e706e67"><img width="100" src="https://cdn.worldvectorlogo.com/logos/nodemon.svg"><img width="100" src="https://static-00.iconduck.com/assets.00/sequelize-original-icon-885x1024-r8dswyvj.png>
 
 
 # Authors  🧙🏻‍♀️ 

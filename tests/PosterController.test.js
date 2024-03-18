@@ -23,8 +23,8 @@ describe('Testing CRUD Posters', () => {
         expect (typeof response.body).toBe("object");//tipo de dato que esperamos obtener
         expect (response.status).toBe(201);
   });
-  afterAll(async ()=> {
-    await connection_db.sync({force: true});
-    console.log("Every table was deleted!✌");
-  });
+//   afterAll(async ()=> {
+//     await connection_db.sync({force: true});
+//     console.log("Every table was deleted!✌");
+//   });
 });

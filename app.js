@@ -19,6 +19,6 @@ try {
     console.error('❌ Unable to connect to the database:', error);
   }
 
-  app.listen(PORT, ()=>{
+  export const server = app.listen(PORT, ()=>{
     console.log(`Server is running on port http://localhost:${PORT}`)
   })

@@ -1,6 +1,6 @@
 import require  from 'express';
 import request from 'supertest';
-import { app } from '../app.js'; 
+import { app, server } from '../app.js'; 
 import connection_db from '../database/connection_db.js';
 
 const api = request(app); //request nos permite hacer solicitudes a la app
@@ -23,8 +23,14 @@ describe('Testing CRUD Posters', () => {
         expect (typeof response.body).toBe("object");//tipo de dato que esperamos obtener
         expect (response.status).toBe(201);
   });
+
+  
 //   afterAll(async ()=> {
 //     await connection_db.sync({force: true});
 //     console.log("Every table was deleted!✌");
 //   });
+test('should deleted poster', async() =>{
+  const response = await  api.delete("/api/:id");
+    expect(response.status).toBe(400);
+})
 });

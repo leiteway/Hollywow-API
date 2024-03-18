@@ -25,12 +25,13 @@ To enter the repository folder.
 `bash`
 * Copy code: `npm install`
 * Copy code to make the server run: `npm run dev`
+This will start the server http://localhost:3008 using the database on MySQL Workbench.
 
-This will start the sever http://localhost:3008 using the database on MySQL Workbench.
+4. **Inicialize the Postman**
 [Doc. Postman.pdf](https://github.com/leiteway/Hollywow-API/files/14641270/Doc.Postman.pdf)
 
 
-4. Inicialize the Postman 
+
 * Copy code: `npm run test`
 This will run the tests.
 

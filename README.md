@@ -53,15 +53,11 @@ Route to do the method GET BY ID from the CRUD of our project, including our URL
 <img width="1076" alt="Captura de pantalla 2024-03-18 a las 20 29 43" src="https://github.com/leiteway/Hollywow-API/assets/152177946/df025051-7fcf-48ff-8582-6aaff48876c8">
 
 
-
-
-
-
-
+5. **Test**
 * Copy code: `npm run test`
 This will run the tests.
 
-3. **Open the Project:**
+
 
 ## Project Structure
 * __node_modules:__ This folder contains all the dependencies of your project. When you install packages using npm, they are stored here.
@@ -86,9 +82,9 @@ This will run the tests.
 Contributions are welcome! If you find any problems or have suggestions for improvement, please create an issue or make a pull request.
 
 # Technologies 
-![Our Skills](https://skillicons.dev/icons?i=js,git,github,vite,discord,react,)
+![Our Skills](https://skillicons.dev/icons?i=js,git,github,vite,discord,react,mySQLWorkbench)
 
-# 🧙🏻‍♀️ Autors 
+# 🧙🏻‍♀️ Authors 
 
  - J.Leite  https://github.com/leiteway
  - Fatima Capilla  https://github.com/FatimaCapilla

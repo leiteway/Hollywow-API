@@ -6,13 +6,14 @@ This project consists in the Back-end of an API called Hollywow, which consists 
 
 # Index
 
-- [Description](#description)
+- [Description](#🧾-description)
 - [Project Configuration](#project-configuration)
 - [Inicialize the Postman](#inicialize-the-postman)
 - [Test](#test)
 - [Project Structure ](#project-structure)
 - [Contributions](#contributions)
-- [Authors](#authors)
+- [Technologies](#technologies)
+- [Authors](#🧙🏻‍♀️-authors)
 
 # 🧾 Description 
 We have developed the application to manage films data, to allow the users to record the information of the poster´s movies.

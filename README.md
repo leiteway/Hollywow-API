@@ -36,7 +36,7 @@ To enter the repository folder.
 * Copy code to make the server run: `npm run dev`
 This will start the server http://localhost:3008 using the database on MySQL Workbench.
 
-4. **Inicialize the Postman**
+#4. **Inicialize the Postman**
 [Doc. Postman.pdf](https://github.com/leiteway/Hollywow-API/files/14641270/Doc.Postman.pdf)
 <h3>routes-HollywowApi</h3>
 Methods in Postman to view, add, edit, and delete movie posters in our database.
@@ -62,7 +62,7 @@ Route to do the method GET BY ID from the CRUD of our project, including our URL
 <img width="600" alt="Captura de pantalla 2024-03-18 a las 20 29 43" src="https://github.com/leiteway/Hollywow-API/assets/152177946/df025051-7fcf-48ff-8582-6aaff48876c8">
 
 
-5. **Test**
+#5. **Test**
 * Copy code: `npm run test`
 This will run the tests.
 

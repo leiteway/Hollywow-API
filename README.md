@@ -24,7 +24,7 @@ We have developed the application to manage films data, to allow the users to re
 
 `bash`
 * Copy code in your terminal: `git clone https://github.com/leiteway/Hollywow-API.git`
-* Copy code in your terminal: `cd Hollywow-API`
+* Copy code in your terminal: `cd Hollywow-API` <br>
 To enter the repository folder.
 
 

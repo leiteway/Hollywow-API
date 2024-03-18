@@ -42,11 +42,11 @@ Route to do the method DELETE from the CRUD of our project, including our URL an
 <h4>PUT routPut</h4> <br>
 http://localhost:5000/api/4 <br>
 Route to do the method PUT from the CRUD of our project, including our URL and an example of the response. <br>
-<img width="532" alt="Captura de pantalla 2024-03-18 a las 20 26 53" src="https://github.com/leiteway/Hollywow-API/assets/152177946/c66d3eaf-071a-4ced-8f6a-7476bcbda26e">
+<img width="1013" alt="Captura de pantalla 2024-03-18 a las 20 31 21" src="https://github.com/leiteway/Hollywow-API/assets/152177946/89ab25bd-f99c-4a7a-ae27-09605f3c92a3">
 <h4>POST routPost</h4> <br>
 http://localhost:5000/api <br>
 Route to do the method POST from the CRUD of our project, including our URL and an example of the response. <br>
-<img width="481" alt="Captura de pantalla 2024-03-18 a las 20 28 20" src="https://github.com/leiteway/Hollywow-API/assets/152177946/874e3387-f49d-47dd-b6c6-2cd3a40e138a">
+<img width="988" alt="Captura de pantalla 2024-03-18 a las 20 31 56" src="https://github.com/leiteway/Hollywow-API/assets/152177946/2780a1f6-049a-45ca-a03a-0e5fbeafd1dc">
 <h4>GET routGetById</h4> <br>
 http://localhost:5000/api/ <br>
 Route to do the method GET BY ID from the CRUD of our project, including our URL and an example of the response. <br>

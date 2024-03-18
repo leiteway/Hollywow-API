@@ -92,6 +92,7 @@ Contributions are welcome! If you find any problems or have suggestions for impr
 
 # Technologies 
 ![Our Skills](https://skillicons.dev/icons?i=js,git,github,vite,discord,react,)
+https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png
 *MySQLWorkbench
 *Express Validator
 *Jest

@@ -31,9 +31,9 @@ This will start the server http://localhost:3008 using the database on MySQL Wor
 [Doc. Postman.pdf](https://github.com/leiteway/Hollywow-API/files/14641270/Doc.Postman.pdf)
 <h3>routes-HollywowApi</h3>
 Methods in Postman to view, add, edit, and delete movie posters in our database.
-<h4>GET routGet</h4>
-http://localhost:5000/api
-Route to do the method GET from the CRUD of our project, including our URL and an example of the response.
+<h4>GET routGet</h4> <br>
+http://localhost:5000/api <br>
+Route to do the method GET from the CRUD of our project, including our URL and an example of the response. <br>
 <img width="864" alt="Captura de pantalla 2024-03-18 a las 20 22 39" src="https://github.com/leiteway/Hollywow-API/assets/152177946/610a4cc4-c773-4c18-9ea5-2ba53af12a4d">
 
 

@@ -35,6 +35,26 @@ Methods in Postman to view, add, edit, and delete movie posters in our database.
 http://localhost:5000/api <br>
 Route to do the method GET from the CRUD of our project, including our URL and an example of the response. <br>
 <img width="864" alt="Captura de pantalla 2024-03-18 a las 20 22 39" src="https://github.com/leiteway/Hollywow-API/assets/152177946/610a4cc4-c773-4c18-9ea5-2ba53af12a4d">
+<h4>DELETE routDelete</h4> <br>
+http://localhost:5000/api/ <br>
+Route to do the method DELETE from the CRUD of our project, including our URL and an example of the response. <br>
+<img width="910" alt="Captura de pantalla 2024-03-18 a las 20 25 10" src="https://github.com/leiteway/Hollywow-API/assets/152177946/22c177f7-1732-41e2-b295-bb70d643ae92">
+<h4>PUT routPut</h4> <br>
+http://localhost:5000/api/4 <br>
+Route to do the method PUT from the CRUD of our project, including our URL and an example of the response. <br>
+<img width="532" alt="Captura de pantalla 2024-03-18 a las 20 26 53" src="https://github.com/leiteway/Hollywow-API/assets/152177946/c66d3eaf-071a-4ced-8f6a-7476bcbda26e">
+<h4>POST routPost</h4> <br>
+http://localhost:5000/api <br>
+Route to do the method POST from the CRUD of our project, including our URL and an example of the response. <br>
+<img width="481" alt="Captura de pantalla 2024-03-18 a las 20 28 20" src="https://github.com/leiteway/Hollywow-API/assets/152177946/874e3387-f49d-47dd-b6c6-2cd3a40e138a">
+<h4>GET routGetById</h4> <br>
+http://localhost:5000/api/ <br>
+Route to do the method GET BY ID from the CRUD of our project, including our URL and an example of the response. <br>
+<img width="1076" alt="Captura de pantalla 2024-03-18 a las 20 29 43" src="https://github.com/leiteway/Hollywow-API/assets/152177946/df025051-7fcf-48ff-8582-6aaff48876c8">
+
+
+
+
 
 
 

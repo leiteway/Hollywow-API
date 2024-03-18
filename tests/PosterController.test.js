@@ -10,13 +10,7 @@ const api = request(app); // método de supertest para hacer peticiones sobre nu
 
 
 describe('Testing CRUD posters', ()=> {
-  afterAll(async () => {
-    await Poster.destroy({ where : { name: 'test'}});  // Esto borrará todas las tablas
-        // await Poster.truncate(); // esto si funciona
-        await connection_db.close();
-        server.close();
-    console.log('Every table is deleted');
-  });
+ 
   
   test('Response body must be an array and the show 200 status', async() => {
     const response = await api.get('/api');
@@ -35,11 +29,44 @@ describe('Testing CRUD posters', ()=> {
     expect(response.status).toBe(201);
     
   });
+  afterAll(async () => {
+    await Poster.destroy({ where : { name: 'test'}});  // Esto borrará todas las tablas
+        // await Poster.truncate(); // esto si funciona
+        await Poster.destroy({ where : { name: 'update test'}});
+        await connection_db.close();
+        server.close();
+    console.log('Every table is deleted');
+  });
 
   test('should delete poster', async() =>{
     const response = await api.delete("/api/:id");
     expect(response.status).toBe(400);
   });
+  
+
+  // update
+  test('Should update poster', async()=>{
+      
+    const newPoster = await Poster.create({
+      name: 'test',
+      director: "test",
+      year: 1989,
+      imageUrl:"www.google.es"
+    }
+);
+    const response = await api.put(`/api/${newPoster.id}`).send({
+      name: 'update test',
+      director: "update test",
+      year: 1990,
+      imageUrl:"www.google.es"
+    }
+        
+      )
+      expect(response.status).toBe(200);
+      expect(typeof response.body).toBe('object');
+  })
+
+
 });
 /*   afterAll(async () =>{
     await connection_db.sync({force: true});

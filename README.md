@@ -1,6 +1,6 @@
 
 
-# 🎞🎟 # Hollywow-API 
+# 🎞 # Hollywow-API 🎟
 This project consists in the Back-end of an API called Hollywow, which consists of performing the __CRUD__ method using POST (Create), GET (Read), PUT (Update) and DELETE (Delete) requests, with several technologies.
 
 
@@ -15,7 +15,7 @@ This project consists in the Back-end of an API called Hollywow, which consists 
 - [Technologies](#technologies)
 - [Authors](#authors)
 
-# Description  🧾 
+# Description 🧾 
 We have developed the application to manage films data, to allow the users to record the information of the poster´s movies.
 
 ## Project Configuration
@@ -42,6 +42,7 @@ To enter the repository folder.
 This will start the server http://localhost:3008 using the database on MySQL Workbench.
 
 ## Inicialize the Postman
+
 [Doc. Postman.pdf](https://github.com/leiteway/Hollywow-API/files/14641270/Doc.Postman.pdf)
 <h3>routes-HollywowApi</h3>
 Methods in Postman to view, add, edit, and delete movie posters in our database.
@@ -68,11 +69,13 @@ Route to do the method GET BY ID from the CRUD of our project, including our URL
 
 
 ## Test
+
 * Copy code: `npm run test`
 This will run the tests.
 
 
 ## Project Structure 
+
 * __controllers:__ to handle HTTP requests.
 * __database:__ configuration of connections with the database.
 * __helpers:__ contains the import and export validations from express-validator.
@@ -84,16 +87,17 @@ This will run the tests.
 * __.env:__ is a configuration file commonly used to store environment variables.
 * __.gitignore:__  Specifies files and folders ignored by Git to prevent irrelevant or automatically generated files from being tracked.
 * __app.js:__ entry point of the application.
-*__config.js:__ application configuration, such as database and server configuration.
+* __config.js:__ application configuration, such as database and server configuration.
 * __package.json and package-lock.json:__ These files contain metadata about your project and its dependencies. They also include scripts for running various tasks like starting the development server or building the production bundle.
 * __README.md:__ This file typically contains instructions on how to set up and run your project, as well as any other relevant information for contributors or users.
 
 
-# Technologies 
+# Technologies 🛠
+
 <img width="70" src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" ><img width="70" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" ><img width="70" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-70b8-fb2f7c0a4948.png"><img width="70" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"><img width="70" src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png"><img width="70" src="https://user-images.githubusercontent.com/25181517/121401671-49102700-c959-11eb-9f6f-74d49a5e1774.png"><img width="70" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4870-b353-e2cbed900ed6.png"><img width="70" src="https://user-images.githubusercontent.com/25181517/187955005-f4ca6f1a-e727-497b-b81b-93fb9726268e.png"><img width="70" src="https://user-images.githubusercontent.com/25181517/183568594-85e270a7-0d7e-4d1a-9028-c8c2209e073c.png"><img width="70" src="https://camo.githubusercontent.com/22ab83df12f18aafa068cba1d938a1a6cb5019b0c412645d14405cb707b9d89e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f3333383935382f696d616765732f313439363334352f7375706572746573742e706e67"><img width="70" src="https://cdn.worldvectorlogo.com/logos/nodemon.svg"><img width="70" src="https://static-00.iconduck.com/assets.00/sequelize-original-icon-885x1024-r8dswyvj.png">
 
 
-# Authors  🧙🏻‍♀️ 
+# Authors 🧙🏻‍♀️ 
 
  - J.Leite  https://github.com/leiteway
  - Fatima Capilla  https://github.com/FatimaCapilla

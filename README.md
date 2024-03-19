@@ -22,9 +22,15 @@ We have developed the application to manage films data, to allow the users to re
 
 1. **Clone the Repository:**
 
-`bash`
-* Copy code in your terminal: `git clone https://github.com/leiteway/Hollywow-API.git`
-* Copy code in your terminal: `cd Hollywow-API` <br>
+* Copy code in your terminal:
+  ```
+  git clone https://github.com/leiteway/Hollywow-API.git
+  ```
+* Copy code in your terminal:
+  ```
+  cd Hollywow-API
+  ```
+  <br>
 To enter the repository folder.
 
 
@@ -36,9 +42,14 @@ To enter the repository folder.
 
 3. **Install Dependencies:** 
 
-`bash`
-* Copy code: `npm install`
-* Copy code to make the server run: `npm run dev`
+* Copy code:
+  ```
+  npm install
+  ```
+* Copy code to make the server run:
+  ```
+  npm run dev
+  ```
 This will start the server __http://localhost:5000__ using the database on MySQL Workbench.
 
 ## Initialize the Postman
@@ -70,7 +81,10 @@ Route to do the method GET BY ID from the CRUD of our project, including our URL
 
 ## Test
 
-* Copy code: `npm run test`
+* Copy code:
+  ```
+  npm run test
+  ```
 This will run the tests.
 
 

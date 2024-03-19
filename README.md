@@ -39,7 +39,7 @@ To enter the repository folder.
 `bash`
 * Copy code: `npm install`
 * Copy code to make the server run: `npm run dev`
-This will start the server __http://localhost:3008__ using the database on MySQL Workbench.
+This will start the server __http://localhost:5000__ using the database on MySQL Workbench.
 
 ## Initialize the Postman
 

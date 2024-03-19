@@ -8,7 +8,7 @@ This project consists in the Back-end of an API called Hollywow, which consists 
 
 + [Description](#description)
 + [Project Configuration](#project-configuration)
-+ [Inicialize the Postman](#inicialize-the-postman)
++ [Initialize the Postman](#initialize-the-postman)
 + [Test](#test)
 + [Project Structure ](#project-structure)
 + [Contributions](#contributions)
@@ -41,7 +41,7 @@ To enter the repository folder.
 * Copy code to make the server run: `npm run dev`
 This will start the server __http://localhost:3008__ using the database on MySQL Workbench.
 
-## Inicialize the Postman
+## Initialize the Postman
 
 [Doc. Postman.pdf](https://github.com/leiteway/Hollywow-API/files/14641270/Doc.Postman.pdf)
 <h3>routes-HollywowApi</h3>

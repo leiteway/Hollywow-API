@@ -4,6 +4,9 @@ import connection_db from '../database/connection_db.js';
 import Poster from  '../models/PosterModel.js';
 
 const api = request(app);
+
+let idPoster;
+
 describe('testing', () => {
 afterAll(async ()=>{
         try {
@@ -25,9 +28,16 @@ afterAll(async ()=>{
         });
       expect(response.status).toBe(201);
       expect(typeof response.body).toBe('object');
+      idPoster = response.body.id;
     });
 
-      
+    
+      test('Should get one poster', async () => {
+            const response = await api.get(`/api/${idPoster}`);
+            expect(response.status).toBe(200);
+      })
+  
+
 
    test('should get posters', async() => {
       const response = await api.get('/api');

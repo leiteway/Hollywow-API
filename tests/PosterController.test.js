@@ -8,7 +8,8 @@ const api = request(app);
 let idPoster;
 
 describe('testing', () => {
-afterAll(async ()=>{
+
+  afterAll(async ()=>{
         try {
             await Poster.destroy({where: { name:"test"}});
             await Poster.destroy({where: {name: "update test"}});

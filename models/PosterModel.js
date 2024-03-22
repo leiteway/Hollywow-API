@@ -27,8 +27,8 @@ export const Poster = connection_db.define('Poster', {
     allowNull: false,
   }
 }, {
-        tableName: 'posters', // Nombre de la tabla en la base de datos
-        timestamps: false, // Disable timestamps
+        tableName: 'posters',
+        timestamps: false,
       }
 );
 
